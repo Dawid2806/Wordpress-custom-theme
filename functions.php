@@ -120,11 +120,3 @@ function my_javascript()
 	wp_enqueue_script('my-script', get_template_directory_uri() . '/js/myscript.js', array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'my_javascript');
-function custom_post_type_permalink($post_link, $post, $leavename)
-{
-	if ($post->post_type == 'single-service' && $post->post_status == 'publish') {
-		$post_link = str_replace('%single-service%', $post->post_name, $post_link);
-	}
-	return $post_link;
-}
-add_filter('post_type_link', 'custom_post_type_permalink', 10, 3);

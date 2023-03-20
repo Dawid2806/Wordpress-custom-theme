@@ -1,4 +1,4 @@
-<div class="fixed	 z-10 top-0 left-0 bg-black bg-opacity-50 w-full" style="display: none;" id="Nav">
+<div class="fixed z-10 top-0 left-0 bg-black bg-opacity-50 w-full" style="display: none;" id="Nav">
     <nav class="relative p-8 gap-6 bg-[#C8121B] z-50 opacity-100 text-white font-bold">
         <span class="text-xl">AF Security</span>
         <ul class="mt-5">

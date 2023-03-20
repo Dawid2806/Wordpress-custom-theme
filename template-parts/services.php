@@ -10,9 +10,9 @@ if ($query->have_posts()) :
         <?
         while ($query->have_posts()) : $query->the_post();
             $direction = get_field('content_direction');
-            $justify_class = $direction == 'left' ? 'justify-start px-12' : 'justify-end px-12';
+            $justify_class = $direction == 'left' ? 'justify-start ' : 'justify-end ';
         ?>
-            <div style="background-image: url('<?php the_field('image'); ?>');" class="relative  w-screen h-[580px] bg-no-repeat bg-cover bg-center  flex justify-start items-center overflow-hidden <?php echo $justify_class;  ?>
+            <div style="background-image: url('<?php the_field('image'); ?>');" class="relative flex justify-start items-center overflow-hidden px-12  w-screen h-[580px] bg-no-repeat bg-cover bg-center   <?php echo $justify_class;  ?>
     ">
                 <div class="bg-black absolute w-full h-full opacity-75 top-0 left-0 z-10"></div>
                 <div class=" w-2/4 col-span-1	 text-white z-20">
@@ -26,7 +26,7 @@ if ($query->have_posts()) :
                                 <?php the_field("second_title"); ?>
                             </h6>
                         </div>
-                        <div class="w-3/4 mt-10 "><?php the_field("content"); ?></div>
+                        <div class="w-2/3 mt-10 "><?php the_field("content"); ?></div>
                         <div class="flex items-center mt-10  cursor-pointer">
                             <div class="bg-[#E20D17] p-2 rounded-full">
                                 <img src="<?php echo get_theme_file_uri('/images/arrow.svg')  ?>" alt="" />
