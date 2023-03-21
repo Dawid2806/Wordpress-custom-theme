@@ -14,7 +14,7 @@ const closeMenuHandler = () => {
   navigation.style.display = "none";
 };
 
-function toggleMenuItemDetails() {
+const toggleMenuItemDetails = () => {
   menuItemDetails.forEach((item, index) => {
     const menuItem = menuItemName[index];
     menuItem.addEventListener("click", () => {
@@ -22,14 +22,14 @@ function toggleMenuItemDetails() {
       item.classList.toggle("hidden");
     });
   });
-}
+};
 
-function setListStyle() {
+const setListStyle = () => {
   const liElements = document.getElementsByTagName("li");
   for (let i = 0; i < liElements.length; i++) {
     liElements[i].style.listStyleType = "square";
   }
-}
+};
 setListStyle();
 toggleMenuItemDetails();
 showButton.addEventListener("click", showMenuHandler);

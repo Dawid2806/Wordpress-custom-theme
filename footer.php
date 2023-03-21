@@ -8,15 +8,15 @@
         <div class="flex flex-col justify-center gap-5 text-white mt-4">
             <div class="flex items-center content-center gap-5 text-sm  justify-center">
 
-                <a href="#">AF Security GmbH</a>
+                <span href="#">AF Security GmbH</span>
                 <span class="mr-2">&middot;</span>
-                <a href="#"> Waldkraiburger Str. 3 </a>
+                <span href="#"> Waldkraiburger Str. 3 </span>
                 <span class="mr-2">&middot;</span>
-                <a href="#">93073 Regensburg</a>
+                <span href="#">93073 Regensburg</span>
                 <span class="mr-2">&middot;</span>
-                <a href="#">Fon +49 9401 95798-0</a>
+                <span href="#">Fon +49 9401 95798-0</span>
                 <span class="mr-2">&middot;</span>
-                <a href="#">info@af-security.de</a>
+                <span href="#">info@af-security.de</span>
             </div>
             <div class="flex text-[#E20D17] text-xs justify-between">
                 <div class="ml-10 flex gap-2">
